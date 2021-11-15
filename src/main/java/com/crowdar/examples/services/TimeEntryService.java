@@ -58,7 +58,7 @@ public class TimeEntryService {
         MobileActionManager.click(TimeEntryConstants.BUTTON_UP_MINUTES);
         MobileActionManager.click(TimeEntryConstants.BUTTON_UP_MINUTES);
 
-        System.out. println("........................<<<Fin Scroll >>>");
+        System.out. println("........................<<<Fin End >>>");
 
     }
     public static void doSave(){
@@ -71,12 +71,6 @@ public class TimeEntryService {
         MobileActionManager.waitVisibility(TimeEntryConstants.SELECT_PROJECT_LOCATOR);
         MobileActionManager.click(TimeEntryConstants.SELECT_PROJECT_LOCATOR);
 
-        //MobileActionManager.click(TimeEntryConstants.ADD_SAVE_FLOATING_BUTTON);
-
-       // MobileActionManager.waitVisibility(TimeEntryConstants.NAME_PROJECT_LOCATOR);
-       // MobileActionManager.setInput(TimeEntryConstants.NAME_PROJECT_LOCATOR,"Project mobile2");
-
-       // MobileActionManager.click(TimeEntryConstants.ADD_SAVE_FLOATING_BUTTON);
 
         MobileActionManager.waitVisibility(TimeEntryConstants.PROJECT_MOBILE_LOCATOR);
         MobileActionManager.click(TimeEntryConstants.PROJECT_MOBILE_LOCATOR);
