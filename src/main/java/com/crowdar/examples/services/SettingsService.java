@@ -28,6 +28,10 @@ public class SettingsService {
         MobileActionManager.waitClickable(SettingsConstants.SWITCH_OFFLINE_MODE_LOCATOR);
         MobileActionManager.click(SettingsConstants.SWITCH_OFFLINE_MODE_LOCATOR);
     }
+    public static void doSwitchOnLineMode() {
+        MobileActionManager.waitClickable(SettingsConstants.SWITCH_OFFLINE_MODE_LOCATOR);
+        MobileActionManager.click(SettingsConstants.SWITCH_OFFLINE_MODE_LOCATOR);
+    }
 
     public static void isVisibleOffLineBanner() {
         MobileActionManager.waitVisibility(SettingsConstants.OFFLINE_BANNER);

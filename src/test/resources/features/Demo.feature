@@ -10,6 +10,7 @@ Feature: A user want to interact with the mobile clockify  application
    When the user access the Setting page
    And  the user switches to forced offline mode
    Then the user improve if the offline mode is displayed properly
+   And  the user switches to online mode again
 
 #//Exercise 3: Time Entry tracker
 

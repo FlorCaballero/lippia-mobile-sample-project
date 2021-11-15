@@ -15,7 +15,7 @@ public class SettingsSteps extends PageSteps {
     @When("the user access the Setting page")
     public void userAccessSettingsPage(){
         SettingsService.doAccessSettingsPage( );
-        //System.out. println("........................<<<Acceder a Settings >>>");
+        //System.out. println("........................<<<Access  Settings page >>>");
 
     }
     @And("the user switches to forced offline mode")
@@ -23,6 +23,12 @@ public class SettingsSteps extends PageSteps {
          SettingsService.doSwitchOffLineMode();
         System.out. println("........................<<<Switch Offline Mode >>>");
     }
+    @And("the user switches to online mode again")
+    public void UserSwitchesOnlineMode() {
+        SettingsService.doSwitchOnLineMode();
+        System.out. println("........................<<<Switch Online Mode >>>");
+    }
+
     @Then("the user improve if the offline mode is displayed properly")
     public void OfflineModeIsDisplayedProperly() {
         SettingsService.isVisibleOffLineBanner();
